@@ -1,0 +1,113 @@
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+
+}
+.navigation {
+
+    display: flex;
+    width: 100%;
+    background: lightgray;
+    padding: 1rem;
+    margin-bottom: 2.5rem;
+    justify-content: center;
+}
+.navigation a {
+    color: lightgray;
+    text-decoration: none;
+    margin: 0 0.8rem;
+}
+.container {
+    width: max-content;
+    padding: 2rem 5rem;
+    margin: 0 auto;
+    text-align: center;
+}
+.list-group {
+    background: lightgray;
+    border-radius: 12px;
+    padding: 1.2rem 15rem;
+    display: flex;
+    flex-direction: column;
+}
+.margin-list-a {
+    margin: 0.7rem 0;
+}
+a {
+    background-image: linear-gradient(
+            to right,
+            #d65454,
+            #d65454 50%,
+            #000 50%
+    );
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+a:before {
+    content: '';
+    background: #d65454;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+    background-position: 0;
+}
+
+a:hover::before {
+    width:100%;
+}
+
+div.margin-list-a {
+    background-image: linear-gradient(
+            to right,
+            #d65454,
+            #d65454 50%,
+            #000 50%
+    );
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+div.margin-list-a:before {
+    content: '';
+    background: #d65454;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+}
+
+div.margin-list-a:hover {
+    background-position: 0;
+}
+
+div.margin-list-a:hover::before {
+    width:100%;
+}
+.my-4 {
+    margin: 1.5rem 0;
+}
