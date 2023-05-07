@@ -14,7 +14,7 @@ abstract class Database {
         self::$host = 'localhost';
         self::$user = 'root';
         self::$pass = '';
-        self::$db = 'sample';
+        self::$db = 'project';
         self::$mysqli = new mysqli(self::$host, self::$user, self::$pass, self::$db);
       }
     // Adatbázisból való lekérdezés függvénye
